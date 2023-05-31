@@ -1,0 +1,57 @@
+.flexible-modal {
+    position: absolute;
+    z-index: 1;
+    border: 1px solid rgb(8, 114, 73);
+    background: rgb(0, 0, 0);
+  }
+.flexible-modal-mask {
+    position: fixed;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+  }
+
+.flexible-modal-resizer {
+    position:absolute;
+    right:0;
+    bottom:0;
+    cursor:se-resize;
+    margin:5px;
+    border-bottom: solid 2px #333;
+    border-right: solid 2px #333;
+  }
+
+.flexible-modal-drag-area{
+    background: rgba(2, 53, 27, 0.973);
+    height: 50px;
+    position:absolute;
+    right:0;
+    top:0;
+    cursor:move;
+  }
+
+.body{
+  color: aliceblue;
+  height: 300px;
+  overflow: auto;
+  float: left;
+  position: relative;
+  margin-left: -5px;
+  display: table-cell;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 20px; 
+  width: 50%; 
+}
+
+.element { 
+  margin: 10px; 
+}
+
+.side {
+  width: 215px;
+  overflow-y:auto;
+}
